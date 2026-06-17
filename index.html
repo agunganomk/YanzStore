@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Bisnis Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        utama: '#165DFF',
+                        sekunder: '#36CFC9',
+                        gelap: '#1D2129',
+                        abu: '#86909C',
+                        muda: '#F2F3F5',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .svg-shadow {
+                filter: drop-shadow(0 4px 6px rgba(22, 93, 255, 0.15));
+            }
+            .transition-all-custom {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-muda text-gelap overflow-x-hidden">
+    <!-- Navigasi -->
+    <nav class="fixed w-full top-0 left-0 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all-custom">
+        <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <!-- SVG Logo -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-shadow">
+                    <rect width="40" height="40" rx="10" fill="url(#grad1)"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#165DFF"/>
+                            <stop offset="100%" stop-color="#36CFC9"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="text-gelap font-bold text-lg">PremiumCorp</span>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#" class="font-medium hover:text-utama transition-all-custom">Beranda</a>
+                <a href="#" class="font-medium hover:text-utama transition-all-custom">Layanan</a>
+                <a href="#" class="font-medium hover:text-utama transition-all-custom">Tentang</a>
+                <a href="#" class="font-medium hover:text-utama transition-all-custom">Kontak</a>
+            </div>
+            <button class="md:hidden text-gelap text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Bagian Utama -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-white to-muda">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 space-y-6">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-shadow">
+                        Solusi Digital <br> <span class="text-utama">Premium & Terpercaya</span>
+                    </h1>
+                    <p class="text-abu text-lg">Kami menghadirkan layanan berkualitas tinggi dengan desain modern dan teknologi terkini untuk mengembangkan bisnis Anda ke level berikutnya.</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#" class="bg-utama hover:bg-utama/90 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all-custom transform hover:-translate-y-1">
+                            Mulai Sekarang
+                        </a>
+                        <a href="#" class="bg-white hover:bg-muda text-gelap border border-gray-200 px-8 py-3 rounded-lg font-semibold shadow hover:shadow-md transition-all-custom">
+                            Lihat Layanan
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <!-- SVG Ilustrasi Utama -->
+                    <svg width="100%" height="auto" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-shadow">
+                        <rect x="50" y="30" width="400" height="320" rx="20" fill="#F2F3F5" stroke="#165DFF" stroke-width="2"/>
+                        <rect x="80" y="60" width="340" height="40" rx="8" fill="url(#grad2)"/>
+                        <rect x="80" y="120" width="280" height="20" rx="4" fill="#DCDFE6"/>
+                        <rect x="80" y="160" width="300" height="20" rx="4" fill="#E5E6EB"/>
+                        <rect x="80" y="200" width="220" height="20" rx="4" fill="#DCDFE6"/>
+                        
+                        <!-- Elemen Dekoratif SVG -->
+                        <circle cx="420" cy="80" r="40" fill="url(#grad1)" opacity="0.7"/>
+                        <circle cx="60" cy="320" r="30" fill="#36CFC9" opacity="0.5"/>
+                        <polygon points="400,300 440,340 360,340" fill="#165DFF" opacity="0.6"/>
+                        
+                        <defs>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#165DFF"/>
+                                <stop offset="100%" stop-color="#36CFC9"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Fitur -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-gelap mb-4">Keunggulan Kami</h2>
+                <p class="text-abu max-w-2xl mx-auto">Mengapa ribuan klien mempercayakan proyek mereka kepada kami? Berikut adalah nilai lebih yang kami berikan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Kartu Fitur 1 -->
+                <div class="bg-muda/50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all-custom transform hover:-translate-y-2 border border-gray-100">
+                    <!-- SVG Ikon -->
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-5 svg-shadow">
+                        <rect width="60" height="60" rx="12" fill="url(#grad1)" opacity="0.1"/>
+                        <path d="M30 15V30L40 38" stroke="#165DFF" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="30" cy="30" r="20" stroke="#165DFF" stroke-width="2" fill="none"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Waktu Efisien</h3>
+                    <p class="text-abu">Pengerjaan cepat dan tepat waktu tanpa mengurangi kualitas detail dan kerapian desain.</p>
+                </div>
+
+                <!-- Kartu Fitur 2 -->
+                <div class="bg-muda/50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all-custom transform hover:-translate-y-2 border border-gray-100">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-5 svg-shadow">
+                        <rect width="60" height="60" rx="12" fill="url(#grad1)" opacity="0.1"/>
+                        <path d="M15 30L25 40L45 20" stroke="#36CFC9" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M20 35L30 45L50 25" stroke="#36CFC9" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Kualitas Tinggi</h3>
+                    <p class="text-abu">Setiap elemen dirancang dengan standar tertinggi, estetika modern, dan kode yang bersih.</p>
+                </div>
+
+                <!-- Kartu Fitur 3 -->
+                <div class="bg-muda/50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all-custom transform hover:-translate-y-2 border border-gray-100">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-5 svg-shadow">
+                        <rect width="60" height="60" rx="12" fill="url(#grad1)" opacity="0.1"/>
+                        <rect x="15" y="25" width="30" height="20" rx="4" stroke="#165DFF" stroke-width="2" fill="none"/>
+                        <path d="M20 25V20C20 17.2386 22.2386 15 25 15H35C37.7614 15 40 17.2386 40 20V25" stroke="#165DFF" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="30" cy="35" r="3" fill="#165DFF"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Keamanan Penuh</h3>
+                    <p class="text-abu">Sistem dan desain yang aman, teruji, dan selalu diperbarui mengikuti standar industri terbaru.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian CTA -->
+    <section class="py-20 bg-gradient-to-r from-utama/5 to-sekunder/5">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-gelap mb-6">Siap Memulai Proyek Anda?</h2>
+            <p class="text-abu max-w-xl mx-auto mb-8">Mari wujudkan ide Anda menjadi kenyataan dengan desain yang memukau dan fungsionalitas yang andal.</p>
+            <a href="#" class="bg-utama hover:bg-utama/90 text-white px-10 py-4 rounded-lg font-semibold shadow-lg hover:shadow-2xl transition-all-custom transform hover:-translate-y-1 inline-block">
+                Hubungi Kami Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gelap text-white/70 py-10">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="url(#grad1)"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="text-white font-bold text-lg">PremiumCorp</span>
+            </div>
+            <p class="text-sm">© 2026 PremiumCorp. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
+ 
+
+
+gini bukan
